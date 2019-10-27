@@ -57,22 +57,13 @@
   </nav>
 
   <!-- Section: intro -->
-  <section id="intro" class="intro">
-
-    <div class="slogan">
-      <h2>WELCOME TO <span class="text_color">MY WEBSITE</span> </h2>
-      <h4>THE QUIETER YOU BECOME,THE MORE YOU ARE ABLE TO HEAR</h4>
-    </div>
-    <div class="page-scroll">
-      <a href="#service" class="btn btn-circle">
-				<i class="fa fa-angle-double-down animated"></i>
-			</a>
-    </div>
-  </section>
+  <section id="intro" class="">
+ </section>
+ </br>
   <!-- /Section: intro -->
-
+</br>
   <!-- Section: about -->
- 
+ </br>
   <!-- /Section: about -->
   <br>
   </br>
@@ -116,8 +107,9 @@
                                                 <div class="tab-content">
                                                     <div id="requirement" class="container tab-pane fade">
                                                         <div class="bound">
+														</br>
                                                             <h3>1. Yêu cầu</h3>
-                                                            <p class="contents">Chọn 1 đối tượng bất kỳ trong thế giới
+                                                            <p class="contents">   -Chọn 1 đối tượng bất kỳ trong thế giới
                                                                 thực, vídụ như sinh viên, môn học, giảng viên,… đểt hiết
                                                                 kế trên phần mềm một chức năng trên web đểt hêm, sửa,
                                                                 xóa,tìm kiếm cho đối tượng đó</p>
@@ -215,6 +207,7 @@
 																<div class="content2">
 																 <div class="img">
 																 <h1></h1>
+																 <br>
                                                                         <h4>Tìm Kiếm Sinh Viên</h4>
 																		
                                                                         <iframe width="400px" height="200px" src="anh\photo4.JPG"></iframe>
@@ -228,8 +221,7 @@
                                                                 <div class="content2">
 																 <div class="img">
 																 <h1></h1>
-                                                                        <h4><strong>Tải Tất Cả Ảnh</strong></h4>
-																		
+                                                                        <h4><strong>Tải Tất Cả Ảnh: </strong></h4>
                                                                       
                                                                     <div class="icondownload">
                                                                        <a href=""><span><img width="100px" height="40px" src="anh\download.png"/></span></a>
@@ -631,7 +623,8 @@
 
   // Get all elements with class="tablinks" and remove the class "active"
   tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
+   tablinks[0].className = tablinks[0].className.replace(" active", "");
+  for (i = 1; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
 

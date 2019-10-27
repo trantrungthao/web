@@ -886,3 +886,37 @@ imgg {
    width: 400px;
    height: 300px; 
 }
+.tabb {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #fefefe;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tabb button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tabb button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tabb button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabbcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
