@@ -175,6 +175,11 @@ a {
     .section_gap_custom {
       padding: 50px 0px 20px; } }
 
+
+.section-title-wrapabout {
+  text-align: center;
+  margin-bottom: 0px; }
+  
 .section-title-wrap {
   text-align: center;
   margin-bottom: 30px; }
@@ -316,9 +321,9 @@ a {
       .header_area .navbar .nav {
         float: left; } }
     .header_area .navbar .nav .nav-item {
-      margin-right: 45px; }
+      margin-right: 25px; }
       .header_area .navbar .nav .nav-item .nav-link {
-        font: 500 12px/80px "Roboto", sans-serif;
+        font: 500 15px/80px "Roboto", sans-serif;
         text-transform: uppercase;
         color: #000000;
         padding: 0px;
@@ -3342,4 +3347,71 @@ imgg {
    border-color: aqua;
    width: 400px;
    height: 300px; 
+}
+.fancy-about-us-area {
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+.bg-gray {
+    background-color: #f7f7f7;
+}
+.fancy-btn {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 44px;
+    padding: 0 15px;
+    width: 160px;
+    height: 46px;
+    border-left: 2px solid #7450fe;
+    border-right: 2px solid #21d397;
+    box-sizing: border-box;
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 2px;
+    background-image: -webkit-linear-gradient(left, #7450fe 0%, #21d397 100%), -webkit-linear-gradient(left, #7450fe 0%, #21d397 100%);
+    background-image: linear-gradient(to right, #7450fe 0%, #21d397 100%), linear-gradient(to right, #7450fe 0%, #21d397 100%);
+    -webkit-transition-duration: 1000ms;
+    transition-duration: 1000ms;
+    position: relative;
+    z-index: 1;
+}
+
+.fancy-btn:after {
+    color: #fff;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    background: #7450fe;
+    background: -webkit-linear-gradient(to right, #7450fe, #21d397);
+    background: -webkit-linear-gradient(left, #7450fe, #21d397);
+    background: linear-gradient(to right, #7450fe, #21d397);
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 2px;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+}
+
+.fancy-btn:hover:after,
+.fancy-btn.fancy-active:after {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
+}
+
+.fancy-btn.fancy-dark {
+    color: #232d37;
+}
+
+.fancy-btn:hover,
+.fancy-btn.fancy-dark:hover {
+    color: #fff;
+}
+.about-us-thumb > img {
+    border-radius: 5px;
 }
