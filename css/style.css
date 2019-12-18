@@ -1,4 +1,4 @@
-/*----------------------------------------------------
+body/*----------------------------------------------------
 @File: Default Styles
 @Author: Spondon IT
 
@@ -53,7 +53,7 @@ Table of Content:
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 body {
-  line-height: 24px;
+  line-height: 21px;
   font-size: 14px;
   font-family: "Roboto", sans-serif;
   font-weight: normal;
